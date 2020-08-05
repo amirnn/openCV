@@ -8,7 +8,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include_directories(include)
 
 find_package(OpenCV REQUIRED)
-include_directories(${OPENCV_INCLUDE_DIR})
+include_directories(${OPENCV_INCLUDE_DIRS})
+set(OpenCV_SHARED OFF)
+set(OpenCV_STATIC ON)
 
 # To find variables
 # include(CMakeModules/printVariables.cmake)
