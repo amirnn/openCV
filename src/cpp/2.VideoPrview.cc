@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
     {
         uint webCamid = std::stoi(argv[2]);
         std::cout << "Initilzing webcam id: " << webCamid << std::endl;
-        video.open(webCamid);
+        video.open((int)webCamid);
     }
     // it is a video file
     else

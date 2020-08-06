@@ -7,6 +7,7 @@ target_link_libraries(imageBlurring.out ${OpenCV_LIBRARIES})
 add_executable(videoBlurring.out src/cpp/2.VideoPrview.cc include/handleKeyAsync.h)
 target_link_libraries(videoBlurring.out ${OpenCV_LIBRARIES} pthread)
 # Read this link: https://stackoverflow.com/questions/53129648/how-to-have-info-plist-bundled-in-a-macosx-application-with-cmake
+# And this link: https://stackoverflow.com/questions/55518922/missing-info-plist-file-for-c-command-line-tool-application-within-xcode
 set_target_properties(videoBlurring.out PROPERTIES 
 MACOSX_BUNDLE TRUE
 MACOSX_BUNDLE_INFO_PLIST ${PROJECT_SOURCE_DIR}/CMakeModules/Info.plist)
