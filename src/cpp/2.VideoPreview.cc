@@ -1,6 +1,8 @@
 #include <opencv2/opencv.hpp>
 using cv::Mat;
 
+// unfortunatly, opencv's windows don't support threading.
+
 int main(int argc, char const *argv[])
 {
     if (argc == 1)
